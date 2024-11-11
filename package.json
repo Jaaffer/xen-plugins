@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@openedx/frontend-build": "^14.1.2",
+    "@openedx/frontend-plugin-framework": "^1.1.2",
     "@semantic-release/exec": "github:semantic-release/exec",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^12.1.5",
@@ -49,5 +50,31 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "files": [
+    "/dist",
+    "/src"
+  ],
+  "release": {
+    "branches": [
+      {
+        "name": "develop",
+        "prerelease": "alpha"
+      },
+      {
+        "name": "master"
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/exec",
+        {
+          "publishCmd": "echo \"NEXT_RELEASE_VERSION=${nextRelease.version}\" >> $GITHUB_ENV"
+        }
+      ]
+    ]
+  }
 }
