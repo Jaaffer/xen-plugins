@@ -1,3 +1,4 @@
+import React from 'react';
 import { DIRECT_PLUGIN, PLUGIN_OPERATIONS } from '@openedx/frontend-plugin-framework';
 
 export const config = {
