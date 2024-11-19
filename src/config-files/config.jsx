@@ -1,6 +1,8 @@
 import React from 'react';
 import { DIRECT_PLUGIN, PLUGIN_OPERATIONS } from '@openedx/frontend-plugin-framework';
 
+import { Header } from '@crystaldelta/xen-paragon';
+
 export const config = {
   pluginSlots: {
     header_component: {
@@ -16,7 +18,7 @@ export const config = {
             id: 'custom_header',
             type: DIRECT_PLUGIN,
             RenderWidget: () => (
-              <div>Sample Test Header</div>
+              <Header/>
             ),
           },
         },

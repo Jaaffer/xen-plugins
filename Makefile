@@ -5,3 +5,10 @@ build:
 	@rm -rf dist/**/*.test.jsx
 	@rm -rf dist/**/__snapshots__
 	@rm -rf dist/__mocks__
+
+watch:
+	make build
+	mkdir -p ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-plugins
+	rm -rf ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-plugins/dist
+	cp -r dist ../frontend-app-learner-dashboard/node_modules/@crystaldelta/xen-plugins
+	tutor dev restart learner-dashboard

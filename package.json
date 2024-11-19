@@ -11,6 +11,7 @@
     "registry": "https://npm.pkg.github.com."
   },
   "dependencies": {
+    "@crystaldelta/xen-paragon": "^1.0.0-alpha.3",
     "@openedx/frontend-build": "^14.1.2",
     "@openedx/frontend-plugin-framework": "^1.1.2",
     "@semantic-release/exec": "github:semantic-release/exec",
@@ -76,5 +77,8 @@
         }
       ]
     ]
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
   }
 }
