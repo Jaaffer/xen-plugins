@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@crystaldelta/xen-paragon": "^1.0.0-alpha.3",
+    "@crystaldelta/xened-frontend-component-header": "^1.0.0-alpha.2",
     "@openedx/frontend-build": "^14.1.2",
     "@openedx/frontend-plugin-framework": "^1.1.2",
     "@semantic-release/exec": "github:semantic-release/exec",
