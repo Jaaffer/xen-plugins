@@ -1,9 +1,9 @@
 {
-  "name": "@crystaldelta/xen-plugins",
+  "name": "@jaaffer/xen-plugins",
   "version": "1.0.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crystaldelta/xen-plugins"
+    "url": "git+https://github.com/Jaaffer/xen-plugins"
   },
   "main": "dist/index.js",
   "publishConfig": {
