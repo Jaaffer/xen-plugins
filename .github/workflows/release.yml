@@ -24,7 +24,9 @@ jobs:
         registry-url: https://npm.pkg.github.com/
     
     - name: Setup .npmrc
-      run:  echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+      run: |
+        echo "@crystaldelta:registry=https://npm.pkg.github.com/" >> ~/.npmrc 
+        echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
     
     - name: Install dependencies
       run: npm ci
